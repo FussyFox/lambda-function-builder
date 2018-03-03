@@ -1,11 +1,13 @@
 # Docker Lambda Builder
 
-Build AWS Lambda functions using for NodeJS and Python3.6
+Build AWS Lambda functions using for NodeJS and Python3.6.
 
 ### Usage:
 
 ```shell
-docker pull lambdalint/apex-builder
-# copy your Apex project to the container
-docker run -v $(pwd):/app lambdalint/apex-builder python3 -m pip install -r requirements.txt
+docker pull lambdalint/lambda-function-builder
+# build Python function
+docker run -v $(pwd):/var/task lambdalint/lambda-function-builder python3 -m pip install -r requirements.txt
+# build Node.js function
+docker run -v $(pwd):/var/task lambdalint/lambda-function-builder npm install
 ```
