@@ -1,6 +1,6 @@
 # Docker Lambda Builder
 
-Build AWS Lambda functions using for NodeJS and Python3.6.
+Build AWS Lambda functions for NodeJS and Python3.6 using Docker.
 
 ### Usage:
 
