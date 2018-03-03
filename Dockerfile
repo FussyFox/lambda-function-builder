@@ -1,6 +1,6 @@
 FROM amazonlinux:latest
 
-WORKDIR /app
+WORKDIR /var/task
 
 RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 RUN yum update -y
