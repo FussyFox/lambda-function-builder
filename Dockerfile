@@ -8,6 +8,6 @@ RUN yum install -y gcc git libffi-devel openssl-devel nodejs python36 python36-d
 RUN curl https://bootstrap.pypa.io/get-pip.py | python -
 RUN curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh
 
-ADD ./.profile /root/.bashrc
+ADD ./.bashrc /root/.bashrc
 
 CMD ["/bin/bash"]
